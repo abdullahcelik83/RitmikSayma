@@ -12,9 +12,18 @@ Android (ve Expo sayesinde iOS/Web) üzerinde çalışan React Native tabanlı r
 ## Geliştirme
 Bu proje [Expo](https://docs.expo.dev/) tabanlıdır.
 
-```bash
-npm install
-npm run android
-```
+### Visual Studio'da Çalıştırma
+1. Visual Studio veya Visual Studio Code'u açın ve **Dosya > Klasör Aç** adımını izleyerek projeyi (`RitmikSayma`) içe alın.
+2. Yerleşik terminali açın ve bağımlılıkları kurun:
+   ```bash
+   npm install
+   ```
+3. Expo geliştirme sunucusunu başlatın:
+   ```bash
+   npm run android   # Android Emulator/Device
+   npm run ios       # (macOS üzerinde) iOS Simulator
+   npm run web       # Tarayıcıda test için
+   ```
+4. Visual Studio içindeki `Run > Start Debugging` (veya VS Code için `npm run …` görevleri) seçeneklerini kullanarak Expo CLI çıktısındaki talimatları takip edin. Android için Android Emulator veya USB ile bağlı bir cihaz seçebilirsiniz. iOS ve Web komutları da aynı terminalden çalıştırılabilir.
 
 > Not: Android cihaz/emülatör bağlantısı için Expo dokümantasyonunu takip edin. Web veya iOS için `npm run web`/`npm run ios` komutlarını kullanabilirsiniz.
